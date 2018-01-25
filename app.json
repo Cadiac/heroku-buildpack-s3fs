@@ -1,0 +1,23 @@
+{
+  "name": "Buildpack Demo",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_APP_NAME": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
+      "url": "https://github.com/niteoweb/heroku-buildpack-shell.git"
+    }
+  ]
+}
